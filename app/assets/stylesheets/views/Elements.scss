@@ -1,0 +1,53 @@
+.Elements {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  div {
+    width: 100px;
+    height: 78px;
+    border: 6px solid var(--light-grey);
+    background-color: black;
+    border-radius: 6px;
+    position: absolute;
+  }
+
+  .Elements_topLeft {
+    top: 32px;
+    left: 32px;
+  }
+  .Elements_topRight {
+    top: 32px;
+    right: 32px;
+  }
+  .Elements_buttonLeft {
+    bottom: 32px;
+    left: 32px;
+  }
+  .Elements_buttonRight {
+    bottom: 32px;
+    right: 32px;
+  }
+
+  .Elements_line {
+    position: absolute;
+    border: none;
+    top: 0;
+    width: 120vw;
+    height: 12px;
+    background-image: image-url('line.svg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+  }
+
+  .Elements_line_left {
+    transform: rotate(90deg);
+    left: -59.55vw;
+  }
+  .Elements_line_right {
+    transform: rotate(90deg);
+    right: -59.55vw;
+  }
+  .Elements_line_bottom {
+    top: 98.5vh;
+  }
+}

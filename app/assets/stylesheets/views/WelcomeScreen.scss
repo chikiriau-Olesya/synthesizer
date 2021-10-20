@@ -1,0 +1,42 @@
+.WelcomeScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  background-image: image-url('bc.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .circle {
+    position: absolute;
+    top: -1%;
+    left: 20%;
+
+    width: 851.23px;
+    height: 851.23px;
+    background-image: image-url('circ.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: rotate 120s linear infinite;
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .Button {
+    z-index: 1;
+  }
+}

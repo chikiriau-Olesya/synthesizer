@@ -1,0 +1,30 @@
+.ButtonSet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
+  }
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ToggleButton {
+    background-color: var(--black);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+
+    &.active {
+      background-color: var(--blue);
+      color: var(--black);
+    }
+  }
+}
